@@ -1,8 +1,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:quiatchon_mobprog/screens/home_screen.dart';
-import 'package:quiatchon_mobprog/screens/newsfeed_screen.dart';
+import 'package:ingalla_mobprog/constants.dart';
+import 'package:ingalla_mobprog/screens/home_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -20,12 +20,15 @@ class MainApp extends StatelessWidget {
       builder: (_, child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          title: "Facebook Replication",
-          initialRoute: "/home",
-          routes: {
-            "/newsfeed": (context) => const NewsfeedScreen(),
-            "/home": (context) => const HomeScreen(), 
-          },
+          title: 'MySocial',
+          theme: ThemeData(
+            scaffoldBackgroundColor: appBackground,
+            primaryColor: fbPrimary,
+            colorScheme: ColorScheme.fromSeed(
+              seedColor: fbPrimary,
+            ),
+          ),
+          home: const HomeScreen(),
         );
       },
     );

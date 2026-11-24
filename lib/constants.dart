@@ -1,8 +1,12 @@
 
 import 'package:flutter/material.dart';
 
-const Color fbPrimary = Color(0xFF0167F8);
-const Color fbSecondary = Color(0xFF003BB3);
-const Color fbDarkPrimary = Color(0xFF021452);
-const Color fbLightPrimary = Color(0xFF74B7FB);
-const Color fbTextColorWhite = Color(0xFFF0FEFD);
+// MySocial Color Palette
+const Color fbPrimary = Color(0xFF1877F2);
+const Color fbDarkPrimary = Color(0xFF4267B2);
+const Color fbTextColorWhite = Colors.white;
+
+const Color appBackground = Color(0xFFF0F2F5);
+const Color appCardColor = Colors.white;
+const Color appTextColor = Color(0xFF1C1E21);
+const Color appSecondaryText = Color(0xFF65676B);
